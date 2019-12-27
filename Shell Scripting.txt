@@ -1,0 +1,64 @@
+For Creating a backup.
+___________________________________
+#!/bin/bash
+
+cat "$0" > backup.bash
+__________________________________
+Tac command use. Repeat itself.
+__________________________________
+#!/bin/bash
+
+for x in "$@"
+do
+echo $x
+done
+___________________________________
+Double space in file.
+___________________________________
+#!/bin/bash
+
+echo "Test Program"
+sed "$!G"
+___________________________________
+Check whether its file or directory.
+___________________________________
+#!/bin/bash
+
+if [ -f $1 ];
+then
+echo "File"
+else
+echo "Directory"
+fi
+___________________________________
+Add 2 numbers.
+___________________________________
+#!/bin/bash
+
+echo "Enter 1:"
+read na
+echo "Enter 2:"
+read ne
+f=+((na+ne))
+echo $f
+___________________________________
+negative or positive number.
+___________________________________
+#!/bin/bash
+
+read a
+if((a > 0));
+echo "Positive"
+else
+echo "Negative"
+fi
+____________________________________
+LOOP (1 to 20)
+____________________________________
+#!/bin/bash
+
+Loop(i=$1;i<=$2;i++);
+do
+echo $i
+done
+____________________________________
